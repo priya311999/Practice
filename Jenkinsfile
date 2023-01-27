@@ -19,5 +19,11 @@ pipeline {
                echo "Deploying"
             }
         }
+        post{
+            always{
+                emailext body: 'Summary', subject: 'Pipe Notify', to: 'rapr.priya31@gmail.com'
+            }
+        
+        }
     }
 }

@@ -4,19 +4,24 @@ pipeline {
         skipStagesAfterUnstable()
     }
     stages {
-        stage('Build') { 
+        stage('First') { 
             steps { 
-                echo "building"
+                echo "First"
             }
         }
-        stage('Test'){
+        stage('Second'){
             steps {
-                echo "testing"
+                echo "Second"
             }
         }
-        stage('Deploy') {
+        stage('Third') {
             steps {
-               echo "Deploying"
+               echo "Third"
+            }
+        }
+         stage('Fourth') {
+            steps {
+               echo "Fourth"
             }
         }
     }

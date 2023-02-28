@@ -6,22 +6,22 @@ pipeline {
     stages {
         stage('First') { 
             steps { 
-                echo "First"
+                echo "First Application"
             }
         }
         stage('Second'){
             steps {
-                echo "Second"
+                echo "Second Application"
             }
         }
         stage('Third') {
             steps {
-               echo "Third"
+               echo "Third Application"
             }
         }
          stage('Fourth') {
             steps {
-               echo "Fourth"
+               echo "Fourth Application"
             }
         }
     }

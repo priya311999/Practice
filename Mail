@@ -1,0 +1,28 @@
+pipeline {
+agent any
+stages {
+stage('email') {
+steps {
+echo 'Hello World'
+}
+}
+stage('pipeline') {
+steps {
+echo 'Hello World'
+}
+}
+stage('priya') {
+steps {
+echo 'Hello World'
+}
+}
+}
+post
+{
+always
+{
+emailext body: 'email pipeline', subject: 'pipeline', to:
+'rapr.priya31@gmail.com'
+}
+}
+}
